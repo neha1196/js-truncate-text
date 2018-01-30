@@ -1,0 +1,19 @@
+{
+  "name": "js-truncate-text",
+  "version": "1.0.0",
+  "description": "An npm package to truncate the input text to a specified or default length.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neha1196/js-truncate-text.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neha Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neha1196/js-truncate-text/issues"
+  },
+  "homepage": "https://github.com/neha1196/js-truncate-text#readme"
+}
