@@ -1,25 +1,39 @@
-module.exports = function(input, length) {
-  var output = '',
-    inputLength = input.length,
-    inputCharacter = '',
-    lastWord = '';
-  if (length === undefined) {
-    length = 10;
-  }
-  if (length >= inputLength) {
-    return input;
-  }
-  for (i = (inputLength - 1); i >= 0; i--) {
-    inputCharacter = input.charAt(i);
-    if (inputCharacter === " ") {
-      lastWord = String(input)
-        .substring(i, (inputLength));
-      break;
+"use strict";
+
+module.exports.truncate = function (input, length) {
+
+    var output = "",
+        lastWord = "",
+        inputLength = 0,
+        inputArray = input.split(" ");
+  /* Split the input string on " " delimeter and
+         add each splitted word into an array */
+
+    if (inputArray.length <= 1) { //Check of the length of the array
+        return input;
     }
-  }
-  output = String(input)
-    .substring(0, length)
-    .concat('...')
-    .concat(lastWord);
-  return output;
-}
+
+    lastWord = inputArray[inputArray.length - 1];
+    inputLength = input.length - lastWord.length;
+  /* If the array contains more than 1 element, then find the last element and
+  calculate the new inputlength excluding the last word(element) */
+
+    if (length === undefined) {
+        length = 10;
+    } // Set the default truncation limit to 10 if not defined in the input
+
+    if (length >= (inputLength + 1)) {
+        return input;
+    }
+    /*Return input as it is if the truncation limit exceeds r is equal to
+    the inputlength*/
+
+    output = String(input)
+        .substring(0, length) // Returns the substring  of the input till specified length.
+        .concat("... ") // Concats ... with the truncated text.
+        .concat(lastWord); // Appends the last word to the above text.
+    return output;
+
+};
+
+/*Created By: Neha Anand*/
