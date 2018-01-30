@@ -1,19 +1,28 @@
 {
   "name": "js-truncate-text",
-  "version": "1.0.0",
-  "description": "An npm package to truncate the input text to a specified or default length.",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Now cut long paragraphs short without losing the end.",
+  "main": "js-truncate-text",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neha1196/js-truncate-text.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":  "jasmine-node test"
   },
   "author": "Neha Anand",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/neha1196/js-truncate-text/issues"
   },
-  "homepage": "https://github.com/neha1196/js-truncate-text#readme"
+  "homepage": "https://github.com/neha1196/js-truncate-text#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  },
+  "spec_dir": "test",
+  "spec_files": [
+    "**/*[Ss]pec.js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": false
 }
