@@ -1,6 +1,6 @@
 {
   "name": "js-truncate-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Now cut long paragraphs short without losing the end.",
   "main": "js-truncate-text",
   "repository": {
@@ -10,13 +10,13 @@
   "scripts": {
     "test":  "jasmine-node test"
   },
-  "author": "Neha Anand",
+  "author": "Neha Anand <aneha1196@gmail.com> (https://github.com/neha1196)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/neha1196/js-truncate-text/issues"
   },
   "homepage": "https://github.com/neha1196/js-truncate-text#readme",
-  "dependencies": {
+  "devDependencies": {
     "jasmine-node": "^1.14.5"
   },
   "spec_dir": "test",
