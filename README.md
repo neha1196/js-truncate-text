@@ -27,4 +27,4 @@ Here is an example to use js-truncate-text.
 
 `truncate('This is truncate' , 3);`
 
-gives output as : Thi...truncate
+gives output as : Thi... truncate
